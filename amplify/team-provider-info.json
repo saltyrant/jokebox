@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jokebox-dev-221947-authRole",
+      "UnauthRoleArn": "arn:aws:iam::766223306101:role/amplify-jokebox-dev-221947-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::766223306101:role/amplify-jokebox-dev-221947-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-jokebox-dev-221947-deployment",
+      "UnauthRoleName": "amplify-jokebox-dev-221947-unauthRole",
+      "StackName": "amplify-jokebox-dev-221947",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:766223306101:stack/amplify-jokebox-dev-221947/adc4cee0-0bb3-11eb-9673-02c34f2e797a",
+      "AmplifyAppId": "d104qrnybap3y"
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jokebox-prod-211750-authRole",
+      "UnauthRoleArn": "arn:aws:iam::766223306101:role/amplify-jokebox-prod-211750-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::766223306101:role/amplify-jokebox-prod-211750-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-jokebox-prod-211750-deployment",
+      "UnauthRoleName": "amplify-jokebox-prod-211750-unauthRole",
+      "StackName": "amplify-jokebox-prod-211750",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:766223306101:stack/amplify-jokebox-prod-211750/5a86ec50-0d3d-11eb-895f-0a139c042a64",
+      "AmplifyAppId": "d104qrnybap3y"
+    }
+  }
+}

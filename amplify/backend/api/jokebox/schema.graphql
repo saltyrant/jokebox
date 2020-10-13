@@ -1,0 +1,5 @@
+type Joke @model {
+  id: ID!
+  question: String!
+  answer: String
+}
