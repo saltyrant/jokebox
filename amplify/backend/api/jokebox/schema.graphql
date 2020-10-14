@@ -3,3 +3,9 @@ type Joke @model {
   question: String!
   answer: String
 }
+
+type NewOne @model {
+  id: ID!
+  testing: String!
+  workflow: String
+}
