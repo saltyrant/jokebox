@@ -1,6 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
+import {
+  useFonts,
+  BungeeShade_400Regular 
+} from '@expo-google-fonts/inter'
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
 
@@ -44,6 +48,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
+      <Text style={styles.pageTitle}>Joke Box</Text>
     <View style={styles.container}>
         <TouchableOpacity
           style={styles.button}
@@ -125,5 +130,10 @@ const styles = StyleSheet.create({
   },
   jokeText: {
     fontSize: 24
+  },
+  pageTitle: {
+    fontSize: 30,
+    textAlign: "center",
+    fontFamily: "BungeeShade_400Regular"
   }
 });
