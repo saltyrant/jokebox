@@ -34,36 +34,3 @@ export const onDeleteJoke = /* GraphQL */ `
     }
   }
 `;
-export const onCreateNewOne = /* GraphQL */ `
-  subscription OnCreateNewOne {
-    onCreateNewOne {
-      id
-      testing
-      workflow
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateNewOne = /* GraphQL */ `
-  subscription OnUpdateNewOne {
-    onUpdateNewOne {
-      id
-      testing
-      workflow
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteNewOne = /* GraphQL */ `
-  subscription OnDeleteNewOne {
-    onDeleteNewOne {
-      id
-      testing
-      workflow
-      createdAt
-      updatedAt
-    }
-  }
-`;
