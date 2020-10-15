@@ -48,7 +48,7 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <Text style={styles.pageTitle}>Joke Box V2</Text>
+      <Text style={styles.pageTitle}>Joke Box</Text>
     <View style={styles.container}>
         <TouchableOpacity
           style={styles.button}
