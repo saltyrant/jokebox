@@ -10,6 +10,7 @@ export const createJoke = /* GraphQL */ `
       id
       question
       answer
+      funny
       createdAt
       updatedAt
     }
@@ -24,6 +25,7 @@ export const updateJoke = /* GraphQL */ `
       id
       question
       answer
+      funny
       createdAt
       updatedAt
     }
@@ -38,6 +40,7 @@ export const deleteJoke = /* GraphQL */ `
       id
       question
       answer
+      funny
       createdAt
       updatedAt
     }

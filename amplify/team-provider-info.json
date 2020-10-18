@@ -10,6 +10,18 @@
       "StackName": "amplify-jokebox-dev-221947",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:766223306101:stack/amplify-jokebox-dev-221947/adc4cee0-0bb3-11eb-9673-02c34f2e797a",
       "AmplifyAppId": "d104qrnybap3y"
+    },
+    "categories": {
+      "function": {
+        "jokebox1ad14f60DefineAuthChallenge": {},
+        "jokebox1ad14f60CreateAuthChallenge": {},
+        "jokebox1ad14f60VerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": ""
+        }
+      },
+      "auth": {
+        "jokeboxe5291775": {}
+      }
     }
   },
   "prod": {

@@ -7,6 +7,7 @@ export const getJoke = /* GraphQL */ `
       id
       question
       answer
+      funny
       createdAt
       updatedAt
     }
@@ -23,6 +24,34 @@ export const listJokes = /* GraphQL */ `
         id
         question
         answer
+        funny
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const jokeByFunny = /* GraphQL */ `
+  query JokeByFunny(
+    $funny: String
+    $sortDirection: ModelSortDirection
+    $filter: ModelJokeFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    jokeByFunny(
+      funny: $funny
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        question
+        answer
+        funny
         createdAt
         updatedAt
       }

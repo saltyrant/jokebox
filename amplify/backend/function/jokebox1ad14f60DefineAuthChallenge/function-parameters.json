@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-define-challenge"
+  ],
+  "parentResource": "jokebox1ad14f60",
+  "functionName": "jokebox1ad14f60DefineAuthChallenge",
+  "resourceName": "jokebox1ad14f60DefineAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\Paul_\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\DefineAuthChallenge",
+  "triggerTemplate": "DefineAuthChallenge.json.ejs",
+  "roleName": "jokebox1ad14f60DefineAuthChallenge",
+  "skipEdit": true,
+  "enableCors": false
+}

@@ -1,5 +1,15 @@
-type Joke @model {
+type Joke
+  @model
+  @auth(
+    rules: [
+      { allow: private, operations: [read, create, update, delete] }
+      { allow: public, operations: [read] }
+    ]
+  )
+  @key(name: "jokeByFunny", fields: ["funny"], queryField: "jokeByFunny") {
   id: ID!
   question: String!
   answer: String
+  funny: String
+  createdAt: AWSDateTime!
 }

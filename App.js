@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, SafeAreaView, Platform } from 'react-native';
 import {
   useFonts,
   BungeeShade_400Regular 
@@ -12,6 +12,14 @@ import { API, graphqlOperation } from "aws-amplify";
 import { createJoke } from "./graphql/mutations";
 import { listJokes } from "./graphql/queries";
 Amplify.configure(config)
+
+const isWeb = Platform.OS === 'web'
+
+function ShowPlatform() {
+  return (
+    isWeb ? <Text>On the Web</Text> : <Text>on Moble</Text>
+  )
+}
 
 export default function App() {
   const [addJoke, setAddJoke] = useState(false)
@@ -41,20 +49,13 @@ export default function App() {
     setShowJoke(true)
   }
 
-  function handleAddJokeButton() {
-    setAddJoke(true)
-    setShowJoke(false)
-  }
+  console.log(isWeb)
 
   return (
     <SafeAreaView>
       <Text style={styles.pageTitle}>Joke Box</Text>
+      <ShowPlatform />
     <View style={styles.container}>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={handleAddJokeButton}>
-      <Text>Add Joke</Text>
-      </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={fetchJoke}>
